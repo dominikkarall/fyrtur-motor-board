@@ -17,11 +17,11 @@
 #define REVERSE_ORIENTATION	1	// Curtain is installed in reverse configuration (curtain rod is flipped to "front roll" configuration)
 
 // If != 0,  motor will be stopped if voltage drops below minimum voltage (in order to protect battery)
-#define DEFAULT_MINIMUM_VOLTAGE 0	// voltage check is bypassed
+#define DEFAULT_MINIMUM_VOLTAGE 6	// voltage check is bypassed
 
 #define DEFAULT_FULL_CURTAIN_LEN GEAR_RATIO * (13 + 265.0/360) * 4
 
-#define DEFAULT_TARGET_SPEED 18	// RPM
+#define DEFAULT_TARGET_SPEED 4	// RPM
 
 #define DEFAULT_AUTO_CAL_SETTING 1	// auto-calibration is enabled by default
 
@@ -58,7 +58,7 @@
 /*
  * These parameters are used to slow down the motor speed when approaching the target location
  */
-#define DEFAULT_MINIMUM_SLOWDOWN_SPEED 5
+#define DEFAULT_MINIMUM_SLOWDOWN_SPEED 3
 #define DEFAULT_SLOWDOWN_FACTOR 48
 
 /*
