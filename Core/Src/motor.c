@@ -785,7 +785,14 @@ uint8_t handle_command(uint8_t * rx_buffer, uint8_t * tx_buffer, uint8_t * tx_by
 			{
 				if (!check_flexispeed_trigger()) {
 					// Normal CMD_UP
-					target_location = -1;	// motor goes up until it stalls which forces calibration
+					if (!calibrating && last_command != CMD_UP)
+					{
+						target_location = 0;
+					}
+					else
+					{
+						target_location = -1; // motor goes up until it stalls which forces calibration
+					}
 					command = MotorUp;
 				}
 			}
