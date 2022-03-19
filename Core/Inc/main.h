@@ -117,7 +117,7 @@ void reset_sleep_timer();
 #define DMA_TIMEOUT_MS      10      /* DMA Timeout duration in msec */
 
 // If commented out, sleep mode is disabled. Debugging with sleep mode on is quite challenging..
-//#define IDLE_MODE_SLEEP_DELAY 3000 // Milliseconds. After this period of inactivity the sleep mode is entered
+#define IDLE_MODE_SLEEP_DELAY 3000 // Milliseconds. After this period of inactivity the sleep mode is entered
 
 /* USER CODE END Private defines */
 
